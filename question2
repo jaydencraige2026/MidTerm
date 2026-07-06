@@ -1,0 +1,29 @@
+package midterm;
+import java.util.Scanner;
+public class question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		double shippingTax;
+
+		System.out.print("Enter the price of sale: ");
+		double priceOfSale = input.nextDouble();
+		
+		System.out.print("Enter the state for which the item will be shipped to ex. TX, CA: ");
+		String state = input.next();
+		
+		if (state.equalsIgnoreCase("TX") || (state.equalsIgnoreCase("LA"))) {
+			shippingTax = 1.25;
+		
+	} else if (state.equalsIgnoreCase("CA")) {
+			shippingTax = 3.25;
+			
+	} else {
+		shippingTax = 0.50;
+	}
+		System.out.print(shippingTax);
+		
+	}
+}
