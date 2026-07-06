@@ -1,0 +1,19 @@
+package midterm;
+import java.util.Scanner;
+public class question1 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		int amountOfOz;
+		
+		System.out.print("Enter the amount of Oz: ");
+				amountOfOz = input.nextInt();
+		
+		if (amountOfOz > 5)
+			System.out.print("Baby will sleep well for 5 hours");
+		else 
+			System.out.print("Baby will not sleep well. So be prepared");
+	}
+
+}
